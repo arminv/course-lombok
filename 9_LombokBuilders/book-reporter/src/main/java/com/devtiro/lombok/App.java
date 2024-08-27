@@ -10,8 +10,7 @@ import java.util.Arrays;
 public class App {
 
     /**
-     * This "App" simply prints out the books and authors found in a JSON file
-     * in resources.
+     * This "App" simply prints out the books and authors found in a JSON file in resources.
      *
      * @param args Main args.
      * @throws IOException when cannot read books-authors.json file.
@@ -22,7 +21,8 @@ public class App {
         final URL booksAuthorsFile = App.class.getClassLoader().getResource("books-authors.json");
         final Book[] books = objectMapper.readValue(booksAuthorsFile, Book[].class);
         Arrays.stream(books).forEach(book ->
-                System.out.println(book.toString())
+            System.out.println(book.toString())
         );
     }
+
 }

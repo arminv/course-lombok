@@ -6,7 +6,7 @@ import java.util.Objects;
 
 /**
  * A Book written by an {@link Author}.
- *
+ * <p>
  * Demonstrating on-class @Getter and @Setter.
  */
 @Data
